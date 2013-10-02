@@ -49,7 +49,7 @@ module.exports.parse = function (response) {
 };
 
 module.exports.getMainCollection = function (response) {
-  var collections = _.without(_.keys(response), 'links');
+  var collections = _.without(_.keys(response), 'links', 'meta');
   var types = _.pluck(_.values(response.links), 'type');
   return _.difference(collections, types)[0];
 };
