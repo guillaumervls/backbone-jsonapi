@@ -10,7 +10,7 @@ The "ready to use" files are in the `dist` folder.
 ```html
 <script src='backbone-jsonapi.min.js'></script>
 <script>
-  // The scripts exports a single object, with a single function :
+  // The script exports a single object, with a single function :
   BBJSONAPI.setParseFunctions(Backbone, _);
 </script>
 ```
