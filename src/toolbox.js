@@ -2,6 +2,18 @@ var _;
 
 module.exports = function bootStrapToolBox(lodash) {
   _ = lodash;
+  // Underscore shim
+  _.forOwn = _.forOwn || function (obj, iterator) {
+    var keys;
+    try {
+      keys = _.keys(obj);
+    } catch (e) {
+      return;
+    }
+    _.each(keys, function (key) {
+      iterator(obj[key], key);
+    });
+  };
   return module.exports;
 };
 

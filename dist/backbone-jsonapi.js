@@ -4,11 +4,17 @@ var toolbox = require('./toolbox');
 var setParseFunctions = module.exports = function (Backbone, _) {
   toolbox = toolbox(_); // Bootstrap toolbox;
   Backbone.Collection.prototype.parse = function (response) {
+    if (response === undefined) {
+      return;
+    }
     var output = toolbox.parse(response);
     var mainCollection = toolbox.getMainCollection(response);
     return output[mainCollection];
   };
   Backbone.Model.prototype.parse = function (response) {
+    if (response === undefined) {
+      return;
+    }
     var output = toolbox.parse(response);
     var mainCollection = toolbox.getMainCollection(response);
     return output[mainCollection][0];
@@ -24,6 +30,18 @@ var _;
 
 module.exports = function bootStrapToolBox(lodash) {
   _ = lodash;
+  // Underscore shim
+  _.forOwn = _.forOwn || function (obj, iterator) {
+    var keys;
+    try {
+      keys = _.keys(obj);
+    } catch (e) {
+      return;
+    }
+    _.each(keys, function (key) {
+      iterator(obj[key], key);
+    });
+  };
   return module.exports;
 };
 
