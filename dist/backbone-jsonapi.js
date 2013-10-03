@@ -1,7 +1,10 @@
 ;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+window.BBJSONAPI = window.BBJSONAPI || {};
+window.BBJSONAPI.setParseFunctions = require('./parse');
+},{"./parse":2}],2:[function(require,module,exports){
 var toolbox = require('./toolbox');
 
-var setParseFunctions = module.exports = function (Backbone, _) {
+module.exports = function (Backbone, _) {
   toolbox = toolbox(_); // Bootstrap toolbox;
   Backbone.Collection.prototype.parse = function (response) {
     if (response === undefined) {
@@ -21,11 +24,7 @@ var setParseFunctions = module.exports = function (Backbone, _) {
   };
 };
 
-try {
-  window.BBJSONAPI = window.BBJSONAPI || {};
-  window.BBJSONAPI.setParseFunctions = setParseFunctions;
-} catch (e) {}
-},{"./toolbox":2}],2:[function(require,module,exports){
+},{"./toolbox":3}],3:[function(require,module,exports){
 var _;
 
 module.exports = function bootStrapToolBox(lodash) {

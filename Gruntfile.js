@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     browserify: {
       dist: {
         files: {
-          'dist/backbone-jsonapi.js': ['src/parse.js']
+          'dist/backbone-jsonapi.js': ['src/browser-exports.js']
         },
       }
     },
@@ -89,5 +89,5 @@ module.exports = function (grunt) {
   grunt.registerTask('lint', ['jshint']);
   grunt.registerTask('test', ['mochaTest']);
   grunt.registerTask('dist', ['browserify', 'uglify']);
-  grunt.registerTask('default', ['jshint', 'mochaTest']);
+  grunt.registerTask('default', ['jshint', 'mochaTest', 'dist']);
 };

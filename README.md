@@ -26,6 +26,7 @@ grunt dist
 
 ```
 npm install
+grunt lint
 grunt test
 ```
 

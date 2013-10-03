@@ -1,6 +1,6 @@
 var toolbox = require('./toolbox');
 
-var setParseFunctions = module.exports = function (Backbone, _) {
+module.exports = function (Backbone, _) {
   toolbox = toolbox(_); // Bootstrap toolbox;
   Backbone.Collection.prototype.parse = function (response) {
     if (response === undefined) {
@@ -19,8 +19,3 @@ var setParseFunctions = module.exports = function (Backbone, _) {
     return output[mainCollection][0];
   };
 };
-
-try {
-  window.BBJSONAPI = window.BBJSONAPI || {};
-  window.BBJSONAPI.setParseFunctions = setParseFunctions;
-} catch (e) {}
