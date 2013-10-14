@@ -3,6 +3,11 @@ Backbone JSON-API
 
 Backbone Model &amp; Collection .parse() functions for data from a [JSON API](http://jsonapi.org/format/#url-based-json-api)
 
+### Install
+
+̀`npm install backbone-jsonapi`
+
+
 # Use
 
 The "ready to use" file is in the `dist` folder.
