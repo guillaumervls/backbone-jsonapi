@@ -1,6 +1,6 @@
 {
   "name": "backbone-jsonapi",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "Backbone Model & Collection .parse() functions for data from a JSON API",
   "scripts": {
     "test": "grunt test"
@@ -9,6 +9,7 @@
     "type": "git",
     "url": "git://github.com/guillaumervls/backbone-jsonapi.git"
   },
+  "main": "./src/umd.js",
   "keywords": [
     "backbone",
     "json",
@@ -24,7 +25,9 @@
     "lodash": "~2.2.0",
     "browserify": "~2.33.1",
     "grunt-browserify": "~1.2.8",
-    "grunt-contrib-uglify": "~0.2.4"
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-text-replace": "~0.3.8",
+    "grunt-contrib-clean": "~0.5.0"
   },
   "author": "guillaumervls",
   "license": "MIT",

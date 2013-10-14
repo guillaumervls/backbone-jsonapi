@@ -1,19 +1,26 @@
 Backbone JSON-API
 =================
 
-Backbone Model &amp; Collection .parse() functions for data from a JSON API (http://jsonapi.org/format/#url-based-json-api)
+Backbone Model &amp; Collection .parse() functions for data from a [JSON API](http://jsonapi.org/format/#url-based-json-api)
 
 # Use
 
-The "ready to use" files are in the `dist` folder.
+The "ready to use" file is in the `dist` folder.
 
 ```html
 <script src='backbone-jsonapi.min.js'></script>
-<script>
-  // The script exports a single object, with a single function :
-  BBJSONAPI.setParseFunctions(Backbone, _);
-</script>
+<!--
+  Works with or without AMD
+  In both case it requires '_' and 'Backbone'
+ -->
 ```
+
+Also works with [Browserify](https://github.com/substack/node-browserify) :
+
+```javascript
+require('backbone-jsonapi')(Backbone, _);
+```
+
 
 ## (Re)build
 

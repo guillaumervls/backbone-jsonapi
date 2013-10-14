@@ -8,7 +8,7 @@ var Backbone = {
   Model: function () {}
 };
 
-require('../src/parse.js')(Backbone, _);
+require('../src/backbone-jsonapi.js')(Backbone, _);
 chai.should();
 
 var model = new Backbone.Model();
