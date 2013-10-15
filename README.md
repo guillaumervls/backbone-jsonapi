@@ -10,7 +10,8 @@ Backbone Model &amp; Collection .parse() functions for data from a [JSON API](ht
 
 # Use
 
-The "ready to use" file is in the `dist` folder.
+The "ready to use" [script file](https://raw.github.com/guillaumervls/backbone-jsonapi/master/dist/backbone-jsonapi.min.js)
+is in the `dist` folder.
 
 ```html
 <script src='backbone-jsonapi.min.js'></script>
