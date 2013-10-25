@@ -1,6 +1,6 @@
 {
   "name": "backbone-jsonapi",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Backbone Model & Collection .parse() functions for data from a JSON API",
   "scripts": {
     "test": "grunt test"
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git://github.com/guillaumervls/backbone-jsonapi.git"
   },
-  "main": "./src/umd.js",
+  "main": "src/backbone-jsonapi.js",
   "keywords": [
     "backbone",
     "json",
