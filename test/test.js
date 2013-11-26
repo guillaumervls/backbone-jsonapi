@@ -38,6 +38,6 @@ describe('Parser', function () {
   });
   it('should work for a model', function () {
     input.videos = [input.videos[3]];
-    model.parse(input).should.deep.equal(samples.output[3]);
+    model.parse(input).should.deep.equal(_.omit(samples.output[3], '_alreadyBBJSONAPIParsed'));
   });
 });

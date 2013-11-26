@@ -11,11 +11,17 @@ module.exports = function (Backbone, _) {
     }
     var output = toolbox.parse(response);
     var mainCollection = toolbox.getMainCollection(response);
-    return output[mainCollection];
+    return _.each(output[mainCollection], function (obj) {
+      obj._alreadyBBJSONAPIParsed = true;
+    });
   };
   Backbone.Model.prototype.parse = function (response) {
     if (response === undefined) {
       return;
+    }
+    if (response._alreadyBBJSONAPIParsed) {
+      delete response._alreadyBBJSONAPIParsed;
+      return response;
     }
     var output = toolbox.parse(response);
     var mainCollection = toolbox.getMainCollection(response);
@@ -24,4 +30,4 @@ module.exports = function (Backbone, _) {
   return module.exports;
 };
 
-module.exports.VERSION = '0.1.1';
+module.exports.VERSION = '0.1.5';

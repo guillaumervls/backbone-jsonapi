@@ -160,7 +160,8 @@ module.exports.output = [{
     'shortlist': '/engine/shortlists/classe-americaine',
     'category': '/engine/categories/cinema',
     'vote': '/engine/videos/le-grand-detournement-la-classe-americaine-vous-savez-parler-comme-ca-e/votes'
-  }
+  },
+  '_alreadyBBJSONAPIParsed': true
 }, {
   'voteCount': 1363,
   'title': 'Le Grand Détournement - La classe Américaine : Chips !',
@@ -188,7 +189,8 @@ module.exports.output = [{
     'shortlist': '/engine/shortlists/classe-americaine',
     'category': '/engine/categories/cinema',
     'vote': '/engine/videos/le-grand-detournement-la-classe-americaine-chips/votes'
-  }
+  },
+  '_alreadyBBJSONAPIParsed': true
 }, {
   'voteCount': 1,
   'title': 'La Classe Américaine - Trailer',
@@ -216,7 +218,8 @@ module.exports.output = [{
     'shortlist': '/engine/shortlists/classe-americaine',
     'category': '/engine/categories/cinema',
     'vote': '/engine/videos/la-classe-americaine-trailer/votes'
-  }
+  },
+  '_alreadyBBJSONAPIParsed': true
 }, {
   'voteCount': 1,
   'title': 'La Classe Américaine - Mexican Food',
@@ -244,7 +247,8 @@ module.exports.output = [{
     'shortlist': '/engine/shortlists/classe-americaine',
     'category': '/engine/categories/cinema',
     'vote': '/engine/videos/la-classe-americaine-mexican-food/votes'
-  }
+  },
+  '_alreadyBBJSONAPIParsed': true
 }, {
   'voteCount': 1,
   'title': 'La Classe Américaine - La lettre',
@@ -272,7 +276,8 @@ module.exports.output = [{
     'shortlist': '/engine/shortlists/classe-americaine',
     'category': '/engine/categories/cinema',
     'vote': '/engine/videos/la-classe-americaine-la-lettre/votes'
-  }
+  },
+  '_alreadyBBJSONAPIParsed': true
 }, {
   'voteCount': 1,
   'title': 'Le grand détournement - La Classe américaine complet',
@@ -300,5 +305,6 @@ module.exports.output = [{
     'shortlist': '/engine/shortlists/classe-americaine',
     'category': '/engine/categories/cinema',
     'vote': '/engine/videos/le-grand-detournement-la-classe-americaine-complet/votes'
-  }
+  },
+  '_alreadyBBJSONAPIParsed': true
 }];

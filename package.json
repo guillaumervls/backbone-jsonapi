@@ -1,6 +1,6 @@
 {
   "name": "backbone-jsonapi",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Backbone Model & Collection .parse() functions for data from a JSON API",
   "scripts": {
     "test": "grunt test"
