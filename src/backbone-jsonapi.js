@@ -30,4 +30,4 @@ module.exports = function (Backbone, _) {
   return module.exports;
 };
 
-module.exports.VERSION = '0.1.5';
+module.exports.VERSION = '0.1.6';

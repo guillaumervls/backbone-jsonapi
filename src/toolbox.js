@@ -48,7 +48,9 @@ var processLink = module.exports.processLink = function (response, linkObj, link
         item[attribute] = preloadedItem;
       }
     }
-    item.links[attribute] = applyTemplateUrl(collection, linkObj.href, item);
+    try {
+      item.links[attribute] = applyTemplateUrl(collection, linkObj.href, item);
+    } catch (e) {}
   });
   return response;
 };
